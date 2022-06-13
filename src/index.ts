@@ -27,6 +27,7 @@ const getPaginationQuery = (pagination: Pagination) => {
 
 const getFilterQuery = (filter: Filter) => {
   const { q: search, ...otherSearchParams } = filter;
+  // console.log(filter) #{title: 'cross', q: 'temp'}
   return {
     ...otherSearchParams,
     search,
